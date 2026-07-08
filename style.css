@@ -1,0 +1,50 @@
+html,
+body {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: text;
+
+    font-family: 'Helvetica neue';
+    font-size: 100%;
+    text-align: justify;
+}
+
+a {
+    color: #fc0000;
+}
+
+a:hover{
+    background-color: #fc0000;
+    color: #ffffff;
+}
+
+#name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #fc0000;
+    color: #ffffff;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#contacts {
+    display: flex;
+    position: absolute;
+    bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    
+    width: 100%;
+    box-sizing: border-box;
+
+    color: #fc0000;
+    
+    justify-content: space-between;
+}
