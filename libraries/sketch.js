@@ -98,7 +98,7 @@ function setup() {
 }
 
 function createButtons(){
-  button1 = createButton('Rehersal for Expected Futures (2026)');
+  button1 = createButton('Rehersal for Expected Futures');
   button1.class('floatingButton');
   button1.position(
     random((windowWidth / 6) * 3, (windowWidth / 6) * 4),
@@ -108,7 +108,7 @@ function createButtons(){
     window.location.href = 'rehersal-for-expected-futures.html';
   });
 
-  button2 = createButton('A Body Holds A Body Holds A Body (2026)');
+  button2 = createButton('A Body Holds A Body Holds A Body');
   button2.class('floatingButton');
   button2.position(
     random(0, (windowWidth / 6) * 2),
@@ -118,7 +118,7 @@ function createButtons(){
     window.location.href = 'a-body-holds-a-body-holds-a-body.html';
   });
 
-  button3 = createButton('Extreme Ultra Violet (2025)');
+  button3 = createButton('Extreme Ultra Violet');
   button3.class('floatingButton');
   button3.position(
     random((windowWidth / 6) * 3, (windowWidth / 6) * 4),
@@ -128,7 +128,7 @@ function createButtons(){
     window.location.href = 'extreme-ultra-violet.html';
   });
 
-  button4 = createButton('Anatomia di un Diario (2025)');
+  button4 = createButton('Anatomia di un Diario');
   button4.class('floatingButton');
   button4.position(
     random(0, (windowWidth / 6) * 2),
