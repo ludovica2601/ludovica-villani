@@ -170,17 +170,17 @@ button {
 }
 
 #imagesColumn::-webkit-scrollbar {
-  display: hidden;
+    display: hidden;
 }
 
 #image,
 #video {
-  width: 100%;
+    width: 100%;
     height: auto;
     display: block;
     box-sizing: border-box;
 
-  padding: 0.15vh;
+    padding: 0.15vh;
 }
 
 
@@ -193,11 +193,11 @@ button {
     }
 
     #bio1 {
-        top: 21vw;
+        top: 35vw;
         left: 1vw;
         width: 98vw;
 
-        font-size: 8vw;
+        font-size: 6vw;
 
         text-align: center;
     }
@@ -208,7 +208,7 @@ button {
         left: 1vw;
         width: 98vw;
 
-        font-size: 8vw;
+        font-size: 6vw;
 
         text-align: center;
     }
@@ -237,10 +237,6 @@ button {
         position: fixed;
         left: 2vw;
         top: 20vh;
-
-        overflow-y: scroll;
-
-        border-bottom: 1px solid #fc0000;
     }
 
     #imagesColumn {
@@ -251,9 +247,6 @@ button {
         left: 2vw;
         top: 45vh;
         padding-left: 0vw;
-
-        overflow-x: hidden;
-        overflow-y: scroll;
 
         border-top: 1px solid #fc0000;
     }
