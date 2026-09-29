@@ -1,3 +1,31 @@
+/*
+           ▒▒▓▓▓▓▓▓▓▒▒▒         
+       ▒▓▓███▓▓▓▓▓▓▒▒▒▒▒▒▒      
+    ▒▓████▓▒                    
+   ▓████▓▒                      
+  ▓████▓     ▒▓▓████████▓▓▒     
+ ▓████▓    ▓███████████████▓▒   
+▒▓████▒   ▓███▓░       ▒▓████▓░ 
+▒████▓   ░▓██▓           ▓████▓░
+▒████▓    ▓█▓             ▓████▒
+▒████▓    ▓██▒            ▓████▒
+▒████▓    ▒▓██▓▓▒▒▒▒░    ▒█████▒
+▒█████▓    ░▒▓▓█▓▓▒░    ▒█████▓░
+ ▓█████▓               ▓██████▒ 
+ ▒▓█████▓▒           ▓▓█████▓▒  
+  ▒▓█████████▓▓▓▓▓█████████▓    
+    ▒▓██████████████████▓▒      
+        ▒▒▓▓▓▓▓▓▓▓▓▓▒▒           
+
+©2026 Ludovica Villani
+a website by Andrea Martinelli (@carol__jpg)
+https://caroljpeg.github.io/Andrea_Martinelli/index.html
+*/
+
+
+
+
+
 html,
 body {
     display: flex;
@@ -5,41 +33,51 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    cursor: text;
 
-    font-family: 'Helvetica neue';
-    font-size: 100%;
-    text-align: justify;
-}
+    font-family: 'helvetica';
 
-a {
     color: #fc0000;
 }
 
-a:hover{
-    background-color: #fc0000;
-    color: #ffffff;
+a {
+    color: black;
+    text-decoration: none;
 }
 
-#name {
+#bio1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 1vw;
+    left: 1vw;
+    width: 75vw;
 
-    background-color: #fc0000;
-    color: #ffffff;
+    font-size: 4vw;
+    font-weight: bold;
 
-    text-transform: uppercase;
-    text-align: center;
+    color: #fc0000;
+    filter: drop-shadow(0px 0px 5px #fc0000);
+}
+
+#bio2 {
+    position: absolute;
+    bottom: 1vw;
+    left: 25vw;
+    width: 75vw;
+
+    font-size: 4vw;
+    font-weight: bold;
+
+    color: #fc0000;
+    filter: drop-shadow(0px 0px 5px #fc0000);
+
+    text-align: right;
 }
 
 #contacts {
     display: flex;
     position: absolute;
-    bottom: 1vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    bottom: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
     
     width: 100%;
     box-sizing: border-box;
@@ -47,4 +85,176 @@ a:hover{
     color: #fc0000;
     
     justify-content: space-between;
+}
+
+.floatingButton {
+    z-index: 10;
+    white-space: nowrap;
+
+    font-size: 1vw;
+}
+
+
+
+
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: 0.5px solid;
+    color: #fc0000;
+    padding: 0;
+}
+
+button {
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+#italic {
+  font-style: italic;
+}
+
+#infoColumn {
+    width: 33vw;
+    height: 22vh;
+
+    position: fixed;
+    left: 2vw;
+    top: 2vh;
+
+    overflow-y: hidden;
+
+    border-bottom: 1px solid #fc0000;
+}
+
+#infoColumn::-webkit-scrollbar {
+    display: hidden;
+}
+
+#descriptionColumn {
+    width: 33vw;
+    height: 70vh;
+
+    position: fixed;
+    left: 2vw;
+    top: 24vh;
+
+    overflow-y: scroll;
+
+    text-indent: 5vw;
+
+    border-bottom: 1px solid #fc0000;
+}
+
+#descriptionColumn::-webkit-scrollbar {
+  display: hidden;
+}
+
+#imagesColumn {
+    width: 62vw;
+    height: 92vh;
+
+    position: fixed;
+    left: 35vw;
+    top: 2vh;
+    padding-left: 1vw;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    border-bottom: 1px solid #fc0000;
+}
+
+#imagesColumn::-webkit-scrollbar {
+  display: hidden;
+}
+
+#image,
+#video {
+  width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+
+  padding: 0.15vh;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .floatingButton {
+        font-size: 2vw;
+    }
+
+    #bio1 {
+        top: 21vw;
+        left: 1vw;
+        width: 98vw;
+
+        font-size: 8vw;
+
+        text-align: center;
+    }
+
+    #bio2 {
+        position: absolute;
+        bottom: 35vw;
+        left: 1vw;
+        width: 98vw;
+
+        font-size: 8vw;
+
+        text-align: center;
+    }
+
+    #contacts {
+        bottom: 5vh;
+    }
+
+
+
+
+
+    #infoColumn {
+        width: 96vw;
+        height: 20vh;
+
+        position: fixed;
+        left: 2vw;
+        top: 0vh;
+    }
+
+    #descriptionColumn {
+        width: 96vw;
+        height: 25vh;
+
+        position: fixed;
+        left: 2vw;
+        top: 20vh;
+
+        overflow-y: scroll;
+
+        border-bottom: 1px solid #fc0000;
+    }
+
+    #imagesColumn {
+        width: 96vw;
+        height: 45vh;
+
+        position: fixed;
+        left: 2vw;
+        top: 45vh;
+        padding-left: 0vw;
+
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        border-top: 1px solid #fc0000;
+    }
 }
