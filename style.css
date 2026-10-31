@@ -44,32 +44,20 @@ a {
     text-decoration: none;
 }
 
-#bio1 {
+#bio {
     position: absolute;
-    top: 1vw;
-    left: 1vw;
-    width: 75vw;
+    top: 0vh;
+    left: 20vw;
+    width: 60vw;
+    height: 100vh;
 
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: bold;
+    text-align: center;
+    align-content: center;
 
-    color: #fc0000;
-    filter: drop-shadow(0px 0px 5px #fc0000);
-}
-
-#bio2 {
-    position: absolute;
-    bottom: 1vw;
-    left: 25vw;
-    width: 75vw;
-
-    font-size: 4vw;
-    font-weight: bold;
-
-    color: #fc0000;
-    filter: drop-shadow(0px 0px 5px #fc0000);
-
-    text-align: right;
+    color: white;
+    mix-blend-mode: difference;
 }
 
 #contacts {
@@ -98,6 +86,49 @@ a {
 
 
 
+#aboutPage {
+  width: 50vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 25vw;
+  z-index: 0;
+  align-content: center;
+  overflow-y: scroll;
+
+  text-indent: 5vw;
+  line-height: 1;
+
+  scrollbar-width: none;
+}
+
+#aboutPage::-webkit-scrollbar {
+  display: none;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2vw;
+  align-items: start;
+}
+
+.where {
+  margin: 0;
+  font-size: 0.75vw;
+  text-indent: 5vw;
+  line-height: 2;
+}
+
+.italic {
+  font-style: italic;
+}
+
+
+
+
+
 p {
     margin: 0;
     padding: 0;
@@ -112,6 +143,16 @@ hr {
 button {
     margin-top: 0.5vh;
     margin-bottom: 0.5vh;
+}
+
+#link {
+    color: #fc0000;
+    text-decoration: underline;
+}
+
+#link:hover {
+    color: white;
+    background-color: #fc0000;
 }
 
 #italic {
@@ -189,32 +230,37 @@ button {
 
 @media (max-width: 1200px) {
     .floatingButton {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
-    #bio1 {
-        top: 35vw;
-        left: 1vw;
-        width: 98vw;
-
-        font-size: 6vw;
-
-        text-align: center;
-    }
-
-    #bio2 {
-        position: absolute;
-        bottom: 35vw;
-        left: 1vw;
-        width: 98vw;
-
-        font-size: 6vw;
-
-        text-align: center;
+    #bio {
+        width: 80vw;
+        left: 10vw;
+        font-size: 5vw;
     }
 
     #contacts {
         bottom: 5vh;
+    }
+
+
+
+
+
+    #aboutPage {
+        width: 90vw;
+        left: 5vw;
+        font-size: 3vw;
+        text-indent: 10vw;
+    }
+
+    .columns {
+        display: block;
+    }
+
+    .where {
+        font-size: 2vw;
+        text-indent: 10vw;
     }
 
 

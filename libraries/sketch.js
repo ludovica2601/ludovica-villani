@@ -137,6 +137,16 @@ function createButtons(){
   button4.mousePressed(() => {
     window.location.href = 'anatomia-di-un-diario.html';
   });
+
+  button5 = createButton('CV');
+  button5.class('floatingButton');
+  button5.position(
+    random(0, (windowWidth / 6) * 2),
+    random((windowHeight / 3) * 2, windowHeight - (windowHeight / 10))
+  );
+  button5.mousePressed(() => {
+    window.location.href = 'about.html';
+  });
 }
 
 
@@ -274,5 +284,9 @@ function windowResized() {
   button4.position(
     random((windowWidth / 6) * 3, (windowWidth / 6) * 4),
     random(windowHeight / 4, (windowHeight / 4) * 2)
+  );
+  button5.position(
+    random(0, (windowWidth / 6) * 2),
+    random((windowHeight / 3) * 2, windowHeight - (windowHeight / 10))
   );
 }
